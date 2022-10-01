@@ -5,22 +5,20 @@
  *
  *    Description:  A documented approach to securing your Linux Box
  *
- *        Version:  1.0
+ *        Version:  1.1
  *        Created:  09/23/2022 06:11:38 PM
- *       Revision:  none
+ *       Revision:  1 Added Abstract, modified order and added fork bomb guard to table
+ *		    of contents.  10/01/2022
  *
  *         Author:  Richtoshi     
- *   Organization:  
+ *   Organization:  Navcom
  *
  * =====================================================================================
  */
 
  TABLE OF CONTENTS
 
- 1 HDD Encryption
-
-
-
+ I Abstarct 
 
  1 Hard Drive encryption.
 
@@ -28,9 +26,16 @@
 
  3 Intsall Clam AV
 
- 4 About Super User
+ 4 SSH Login
+ 
+ 5 Guarding against Fork bombs
 
- 5 SSH Login
+ 6 About Super User
+
+ I ABSTRACT
+ 
+ This documents is a record of the things I usually do to secure a fresh instalation of a Linux box.
+ For some it may be overkill, but experience has tought me otherwise.
 
 
  1 HDD encryption
