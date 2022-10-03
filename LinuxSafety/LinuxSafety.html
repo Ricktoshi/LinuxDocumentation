@@ -19,6 +19,30 @@
 <HTML>
   <head>
     <title>Linux Safety</title>
+
+    <style type="text/css">
+    <!--
+    body {
+      color: #dddddd;
+      background-color: #073642;  
+      margin-left: 7%;
+      margin-right: 30% ;
+				}
+    
+    a  { color:#00FFFF; }
+    a:visited { color:#0000FF; }
+    a:hover { color:#008000; }
+    a:active { color:#0000FF; }
+
+    .display {			/* Terminal display */
+		background-color:	#1e1d1d;
+		color:			#02efe8;
+		padding:		0.5em;
+			width:500px;
+	}
+    -->
+    </style>
+
   </head>
 
   <body>
@@ -37,12 +61,26 @@
 </ol>
 
 <h2> 1 HDD encryption </h2>
+
 <p>
- At installation time, most distros will have the option to encrypt your HDD. Do it! You know
-you can get access to the data on a PC by simple using a bootable pen drive. This way your information will be more secure.
+At installation time, most distros will have the option to encrypt your HDD. Do it! You know
+you can get access to the data on a PC by simple using a bootable pen drive. This way your 
+information will be more secure.
 </p>
 
 <h3>2 Install UFW</h3>
+
+<p>
+Uncomplicated Firewall.<br>
+UFW is a front-end to iptables that provideis a user-friendly interfaces. UFW is typically installed by default.<br>
+To set it up, you need to type the <span style="color: #02efe8">  <tt>$sudo ufw status</tt> </span> to find out the current state of the firewall.  <br>
+
+<div class="display">
+<p><tt class="prompt">[me@linuxbox]</tt> <tt class="cmd"> $ sudo ufw status<br>
+Status: inactive <br>
+[me@linuxbox]$ </tt></p>
+</div>
+
 
 
 <h3> 3 Install anti virus Clam Tk </h3>
@@ -70,6 +108,12 @@ Restart the sshd service:
 
 Now if someone wants to hack you via SSH, they would need to know your user ID, password and root password.
 </p>
+
+ <div class="display">
+<p><tt class="prompt">[me@linuxbox me]$</tt> <tt class="cmd">ls &gt; file_list.txt</tt></p>
+</div>
+
+
   </body>
 
 </HTML>
